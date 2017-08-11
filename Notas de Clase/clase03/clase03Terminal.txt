@@ -1,0 +1,261 @@
+cgaravitoc@darkstar:~$ mkdir Herramientas
+cgaravitoc@darkstar:~$ cd Herramientas
+cgaravitoc@darkstar:~/Herramientas$ mkdir clase3
+cgaravitoc@darkstar:~/Herramientas$ cd clase3
+cgaravitoc@darkstar:~/Herramientas/clase3$ git init
+Initialized empty Git repository in /home/cgaravitoc/Herramientas/clase3/.git/
+cgaravitoc@darkstar:~/Herramientas/clase3$ git remote add origin https://github.com/cgaravitoc/clase03.git
+cgaravitoc@darkstar:~/Herramientas/clase3$ emacs programa01.cpp
+cgaravitoc@darkstar:~/Herramientas/clase3$ gg++ programa01.cpp
+bash: gg++: command not found
+cgaravitoc@darkstar:~/Herramientas/clase3$ g++ programa01.cpp
+cgaravitoc@darkstar:~/Herramientas/clase3$ ls
+a.out  programa01.cpp
+cgaravitoc@darkstar:~/Herramientas/clase3$ ls -a
+.  ..  .git  a.out  programa01.cpp
+cgaravitoc@darkstar:~/Herramientas/clase3$ g++ -c  programa01.cpp   
+cgaravitoc@darkstar:~/Herramientas/clase3$ ls
+a.out  programa01.cpp  programa01.o
+cgaravitoc@darkstar:~/Herramientas/clase3$ g++ -c  programa01.cpp -o ejecutable.x
+cgaravitoc@darkstar:~/Herramientas/clase3$ ls
+a.out  ejecutable.x  programa01.cpp  programa01.o
+cgaravitoc@darkstar:~/Herramientas/clase3$ ls -lh
+total 24K
+-rwxr-xr-x 1 cgaravitoc cgaravitoc  11K Aug  9 09:26 a.out
+-rw-r--r-- 1 cgaravitoc cgaravitoc 2.1K Aug  9 09:29 ejecutable.x
+-rw-r--r-- 1 cgaravitoc cgaravitoc   46 Aug  9 09:26 programa01.cpp
+-rw-r--r-- 1 cgaravitoc cgaravitoc 2.1K Aug  9 09:28 programa01.o
+cgaravitoc@darkstar:~/Herramientas/clase3$ strip ejecutable.x
+cgaravitoc@darkstar:~/Herramientas/clase3$ ls -lh
+total 24K
+-rwxr-xr-x 1 cgaravitoc cgaravitoc  11K Aug  9 09:26 a.out
+-rw-r--r-- 1 cgaravitoc cgaravitoc  960 Aug  9 09:30 ejecutable.x
+-rw-r--r-- 1 cgaravitoc cgaravitoc   46 Aug  9 09:26 programa01.cpp
+-rw-r--r-- 1 cgaravitoc cgaravitoc 2.1K Aug  9 09:28 programa01.o
+cgaravitoc@darkstar:~/Herramientas/clase3$ emacs programa01.cpp
+gitk
+cgaravitoc@darkstar:~/Herramientas/clase3$ gitk
+cgaravitoc@darkstar:~/Herramientas/clase3$ gitk
+cgaravitoc@darkstar:~/Herramientas/clase3$ emacs programa01.cpp
+cgaravitoc@darkstar:~/Herramientas/clase3$ emacs .gitignore
+cgaravitoc@darkstar:~/Herramientas/clase3$ emacs programa01.cpp
+cgaravitoc@darkstar:~/Herramientas/clase3$ g++ -c  programa01.cpp 
+cgaravitoc@darkstar:~/Herramientas/clase3$ ejecutable.x 
+bash: ejecutable.x: command not found
+cgaravitoc@darkstar:~/Herramientas/clase3$ ls
+a.out  ejecutable.x  programa01.cpp  programa01.cpp~  programa01.o
+cgaravitoc@darkstar:~/Herramientas/clase3$ ejecutable.x
+bash: ejecutable.x: command not found
+cgaravitoc@darkstar:~/Herramientas/clase3$ g++ ejecutable.x
+/usr/lib64/gcc/x86_64-slackware-linux/5.3.0/../../../../x86_64-slackware-linux/bin/ld: error in ejecutable.x(.eh_frame); no .eh_frame_hdr table will be created.
+/usr/lib64/gcc/x86_64-slackware-linux/5.3.0/../../../../lib64/crt1.o: In function `_start':
+/glibc-tmp-4da84b6e011d91753dd26471d5e4a31b/glibc-2.23/csu/../sysdeps/x86_64/start.S:114: undefined reference to `main'
+collect2: error: ld returned 1 exit status
+cgaravitoc@darkstar:~/Herramientas/clase3$ ejecutable.x
+bash: ejecutable.x: command not found
+cgaravitoc@darkstar:~/Herramientas/clase3$ g++ programa01.cpp 
+cgaravitoc@darkstar:~/Herramientas/clase3$ g++ programa01.cpp -o ejecutable.x
+cgaravitoc@darkstar:~/Herramientas/clase3$ ./ejecutable.x  
+Hola mundo!, output error
+Hola mundo
+, stadard errorcgaravitoc@darkstar:~/Herramientas/clase3$ g++ programa01.cpp -o 
+cgaravitoc@darkstar:~/Herramientas/clase3$ emacs programa01.cpp
+.ejecutable.x^[[Dcgaravitoc@darkstar:~/Herramientas/clase3$ ./ejecutable.x 1> output1.txt
+Hola mundo
+, stadard errorcgaravitoc@darkstar:~/Herramientas/clase3$ ./ejecutable.x 1> outp^C
+cgaravitoc@darkstar:~/Herramientas/clase3$ ./ejecutable.x 2> output2.txt
+Hola mundo!, output error
+cgaravitoc@darkstar:~/Herramientas/clase3$ emacs programa01.cpp
+cgaravitoc@darkstar:~/Herramientas/clase3$ ./ejecutable.x 1> output1.txt
+Hola mundo
+, stadard errorcgaravitoc@darkstar:~/Herramientas/clase3$ ./ejecutable.x 1> outpemacs programa01.cpp
+cgaravitoc@darkstar:~/Herramientas/clase3$ ./ejecutable.x 1> output1.txt
+Hola mundo
+, stadard errorcgaravitoc@darkstar:~/Herramientas/clase3$ mkdir ejecercicioClase
+cgaravitoc@darkstar:~/Herramientas/clase3$ cd ejercicioClase
+bash: cd: ejercicioClase: No such file or directory
+cgaravitoc@darkstar:~/Herramientas/clase3$ rm -r ejecercicioClase
+cgaravitoc@darkstar:~/Herramientas/clase3$ mkdir ejercicioClase
+cgaravitoc@darkstar:~/Herramientas/clase3$ cd ejercicioClase
+cgaravitoc@darkstar:~/Herramientas/clase3/ejercicioClase$ cd 
+cgaravitoc@darkstar:~$ cd Herramientas/clase3
+cgaravitoc@darkstar:~/Herramientas/clase3$ ls
+a.out         ejercicioClase  output2.txt     programa01.cpp~
+ejecutable.x  output1.txt     programa01.cpp  programa01.o
+cgaravitoc@darkstar:~/Herramientas/clase3$ emacs programa01.cpp
+^[[A^[[A^[[Acgaravitoc@darkstar:~/Herramientas/clase3$ ./ejecutable.x 1> output1rm -r ejecercicioClase^C
+cgaravitoc@darkstar:~/Herramientas/clase3$ g++ programa01.cpp -o ejecutable.x
+cgaravitoc@darkstar:~/Herramientas/clase3$ ./ejecutable.x 1> output1.txt
+Hola mundo!, stadard error 
+cgaravitoc@darkstar:~/Herramientas/clase3$ ls
+a.out         ejercicioClase  output2.txt     programa01.cpp~
+ejecutable.x  output1.txt     programa01.cpp  programa01.o
+cgaravitoc@darkstar:~/Herramientas/clase3$ cat output1.txt output2.txt
+Hola mundo!, output error 
+Hola mundo
+, stadard errorcgaravitoc@darkstar:~/Herramientas/clase3$ ./ejecutable.x 2> output2.txt
+Hola mundo!, output error 
+cgaravitoc@darkstar:~/Herramientas/clase3$ cat output1.txt output2.txt}
+Hola mundo!, output error 
+cat: output2.txt}: No such file or directory
+cgaravitoc@darkstar:~/Herramientas/clase3$ cat output1.txt output2.txt 
+Hola mundo!, output error 
+Hola mundo!, stadard error 
+cgaravitoc@darkstar:~/Herramientas/clase3$ git push -u origin master
+error: src refspec master does not match any.
+error: failed to push some refs to 'https://github.com/cgaravitoc/clase03.git'
+cgaravitoc@darkstar:~/Herramientas/clase3$ git add
+Nothing specified, nothing added.
+Maybe you wanted to say 'git add .'?
+cgaravitoc@darkstar:~/Herramientas/clase3$ git add -A
+cgaravitoc@darkstar:~/Herramientas/clase3$ git push -u origin master
+error: src refspec master does not match any.
+error: failed to push some refs to 'https://github.com/cgaravitoc/clase03.git'
+cgaravitoc@darkstar:~/Herramientas/clase3$ git remote add origin https://github.com/cgaravitoc/clase03.gitfatal: remote origin already exists.
+cgaravitoc@darkstar:~/Herramientas/clase3$ git push origin mastererror: src refspec master does not match any.
+error: failed to push some refs to 'https://github.com/cgaravitoc/clase03.git'
+cgaravitoc@darkstar:~/Herramientas/clase3$ git add -A
+cgaravitoc@darkstar:~/Herramientas/clase3$ git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+	new file:   .gitignore
+	new file:   a.out
+	new file:   output1.txt
+	new file:   output2.txt
+	new file:   programa01.cpp
+	new file:   programa01.cpp~
+	new file:   programa01.o
+
+cgaravitoc@darkstar:~/Herramientas/clase3$ export https_proxy="https://cgaravitoc:87CarlosSGar1022@proxyapp.unal.edu.co"
+cgaravitoc@darkstar:~/Herramientas/clase3$ git push -u origin mastererror: src refspec master does not match any.
+error: failed to push some refs to 'https://github.com/cgaravitoc/clase03.git'
+cgaravitoc@darkstar:~/Herramientas/clase3$ git remote add origin https://github.com/cgaravitoc/clase03.gitfatal: remote origin already exists.
+cgaravitoc@darkstar:~/Herramientas/clase3$ export https_proxy="https://cgaravitoc:87CarlosSGar1022@proxyapp.unal.edu.co
+> export https_proxy="https://cgaravitoc:87CarlosSGar1022@proxyapp.unal.edu.co
+cgaravitoc@darkstar:~/Herramientas/clase3$ export https_proxy="https://cgaravitoc:87CarlosSGar1022@proxyapp.unal.edu.co
+export https_proxy="https://cgaravitoc:87CarlosSGar1022@proxyapp.unal.edu.co:8080
+cgaravitoc@darkstar:~/Herramientas/clase3$ git push -u origin mastererror: src refspec master does not match any.
+error: failed to push some refs to 'https://github.com/cgaravitoc/clase03.git'
+cgaravitoc@darkstar:~/Herramientas/clase3$ git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+	new file:   .gitignore
+	new file:   a.out
+	new file:   output1.txt
+	new file:   output2.txt
+	new file:   programa01.cpp
+	new file:   programa01.cpp~
+	new file:   programa01.o
+
+cgaravitoc@darkstar:~/Herramientas/clase3$ export https_proxy="https://cgaravitoc:87CarlosSGar1022@proxyapp.unal.edu.co:8080
+> 
+> 
+> 
+> ^C
+cgaravitoc@darkstar:~/Herramientas/clase3$ export https_proxy="https://cgaravitoc:87CarlosSGar1022@proxyapp.unal.edu.co:8080/"
+cgaravitoc@darkstar:~/Herramientas/clase3$ export https_proxy="https://cgaravitoc:87CarlosSGar1022@proxyapp.unal.edu.co:8080/"
+cgaravitoc@darkstar:~/Herramientas/clase3$ git push -u origin master
+error: src refspec master does not match any.
+error: failed to push some refs to 'https://github.com/cgaravitoc/clase03.git'
+cgaravitoc@darkstar:~/Herramientas/clase3$ git remote add origin https://github.com/cgaravitoc/clase03.gitfatal: remote origin already exists.
+cgaravitoc@darkstar:~/Herramientas/clase3$ export https_proxy="https://cgaravitoc:87CarlosSGar1022@proxyapp.unal.edu.co:8080/"
+cgaravitoc@darkstar:~/Herramientas/clase3$ git remote add origin https://github.com/cgaravitoc/clase03
+fatal: remote origin already exists.
+cgaravitoc@darkstar:~/Herramientas/clase3$ git push origin master
+error: src refspec master does not match any.
+error: failed to push some refs to 'https://github.com/cgaravitoc/clase03.git'
+cgaravitoc@darkstar:~/Herramientas/clase3$ git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+	new file:   .gitignore
+	new file:   a.out
+	new file:   output1.txt
+	new file:   output2.txt
+	new file:   programa01.cpp
+	new file:   programa01.cpp~
+	new file:   programa01.o
+
+cgaravitoc@darkstar:~/Herramientas/clase3$ git log
+fatal: your current branch 'master' does not have any commits yet
+cgaravitoc@darkstar:~/Herramientas/clase3$ git push origin master
+error: src refspec master does not match any.
+error: failed to push some refs to 'https://github.com/cgaravitoc/clase03.git'
+cgaravitoc@darkstar:~/Herramientas/clase3$ git remote add origin https://github.com/cgaravitoc/clase03.gitfatal: remote origin already exists.
+cgaravitoc@darkstar:~/Herramientas/clase3$ git push -u origin master
+error: src refspec master does not match any.
+error: failed to push some refs to 'https://github.com/cgaravitoc/clase03.git'
+cgaravitoc@darkstar:~/Herramientas/clase3$ cd Herramientas
+bash: cd: Herramientas: No such file or directory
+cgaravitoc@darkstar:~/Herramientas/clase3$ git init
+Reinitialized existing Git repository in /home/cgaravitoc/Herramientas/clase3/.git/
+cgaravitoc@darkstar:~/Herramientas/clase3$ git remote add origin https://github.com/cgaravitoc/clase03.gitfatal: remote origin already exists.
+cgaravitoc@darkstar:~/Herramientas/clase3$ ls -a
+.   .git        a.out         ejercicioClase  output2.txt     programa01.cpp~
+..  .gitignore  ejecutable.x  output1.txt     programa01.cpp  programa01.o
+cgaravitoc@darkstar:~/Herramientas/clase3$ git push -u origin master
+error: src refspec master does not match any.
+error: failed to push some refs to 'https://github.com/cgaravitoc/clase03.git'
+cgaravitoc@darkstar:~/Herramientas/clase3$ git push origin master
+error: src refspec master does not match any.
+error: failed to push some refs to 'https://github.com/cgaravitoc/clase03.git'
+cgaravitoc@darkstar:~/Herramientas/clase3$ git commit -m "primer comit"
+[master (root-commit) 509e090] primer comit
+ Committer: cgaravitoc <cgaravitoc@darkstar.org>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 7 files changed, 19 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100755 a.out
+ create mode 100644 output1.txt
+ create mode 100644 output2.txt
+ create mode 100644 programa01.cpp
+ create mode 100644 programa01.cpp~
+ create mode 100644 programa01.o
+cgaravitoc@darkstar:~/Herramientas/clase3$ git push origin master
+Username for 'https://github.com': cgaravitoc
+Password for 'https://cgaravitoc@github.com': 
+Counting objects: 9, done.
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (9/9), 5.15 KiB | 0 bytes/s, done.
+Total 9 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/cgaravitoc/clase03.git
+ * [new branch]      master -> master
+cgaravitoc@darkstar:~/Herramientas/clase3$ git status
+On branch master
+nothing to commit, working directory clean
+cgaravitoc@darkstar:~/Herramientas/clase3$ kgit
+bash: kgit: command not found
+cgaravitoc@darkstar:~/Herramientas/clase3$ gitk
+cgaravitoc@darkstar:~/Herramientas/clase3$ ls
+a.out         ejercicioClase  output2.txt     programa01.cpp~
+ejecutable.x  output1.txt     programa01.cpp  programa01.o
+cgaravitoc@darkstar:~/Herramientas/clase3$ cd ejercicio clase
+bash: cd: ejercicio: No such file or directory
+cgaravitoc@darkstar:~/Herramientas/clase3$ cd ejercicioClase
+cgaravitoc@darkstar:~/Herramientas/clase3/ejercicioClase$ emacs clase03Terminal.txt
+
