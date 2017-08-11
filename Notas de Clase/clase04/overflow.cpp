@@ -1,16 +1,16 @@
 #include<iostream>
 
 int main(){
-  std::cout<< "*********int***********";
-  int intunder =1;
-  int intover =1;
+  std::cout<< "*********int***********" << "\n";
+  int intunder =1000;
+  int intover =1000;
   int N=10000;
   for(int i=1;i<=N;i++){
-    intunder=intunder/2;
-    intover=intover*2;
+    intunder=intunder+1;
+    intover=intover-1;
     std::cout << i << "\t" <<  intunder  << "\t" << intover << "\n" ;
   }
-  std::cout<< "*********double***********";
+  std::cout<< "*********double***********"<< "\n";
   double doubleunder =1;
   double doubleover =1;
   for(int i=1;i<=N;i++){
@@ -18,7 +18,7 @@ int main(){
     doubleover=doubleover*2;
     std::cout << i << "\t" <<  doubleunder  << "\t" << doubleover << "\n" ;
   }
-  std::cout<< "*********logdouble***********";
+  std::cout<< "*********logdouble***********" << "\n" ;
   long double ldoubleunder =1;
   long double ldoubleover =1;
   for(int i=1;i<=N;i++){

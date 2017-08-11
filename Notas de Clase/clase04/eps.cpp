@@ -1,0 +1,17 @@
+#include<iostream>
+
+int main(){
+  double eps=1;
+  double one=0;
+  int i=0;
+  while(one=!1){
+    i++;
+    eps = eps/2;
+    one= 1+eps;
+    std::cout << "****eps*****";
+    std::cout << i << "\t" << one << eps;
+
+  }
+  
+  return 0;
+}
