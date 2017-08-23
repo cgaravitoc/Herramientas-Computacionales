@@ -1,0 +1,3 @@
+Anáilsis
+
+Se graficaron los datos obtenidos de la tabla generada por 2.cpp, de tal forma que las funciones f(x), q(x) y r(x) se graficaron en función de la variable x. Se puede apreciar de la gráfica que el cálculo realizado por la función r(x) fluctúa demasiado en magnitud en comparación con las otras dos funciones, siendo f(x)la función calculada usando el comando pow(_,_). Además, se puede observar que las gráficas de q(x) y f(x) son casi idénticas, tanto, que no es posible diferenciarlas. Por tanto, si se asume como función de referencia a f(x), se concluye que la mejor aproximación al calculo que se está realizando lo hace la función q(x).
