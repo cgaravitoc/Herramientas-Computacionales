@@ -1,0 +1,4 @@
+*for in terminal
+
+for M in 2 4 8 16 32 64; do ./a.out 20 $M 30; done > datos.dat
+
