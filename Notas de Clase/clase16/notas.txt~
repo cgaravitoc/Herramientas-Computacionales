@@ -1,0 +1,30 @@
+RESUMEN
+Hasta el momento hemos revisado diferentes herramientas para optimizar un código.
+
+***Debuggin***
+El código es correcto. No es rápido pero es correcto. 
+-sanitizers
+-gdb
+-ddd -> plot
+-valgrind
+-Compilar con varios compiladores
+	  -gcc/g++
+	  -clang
+	  Se espera que el resultado de la compilación entregue el mismo resultado. En caso contrario, hay que verificar.
+-Varios niveles de optimización.
+
+***Profiling***
+Evalua cuales funciones se demoran mas en ejecutar
+-gprof // permite ver que tiempo consume cada función, tal que la que mas consume es la que se debe optimizar. Por ello es mejor modular el programa por funciones. Debe ser fácil nombrarlas.
+-valgrind (cachegrind) // permite ver cual es la perdida en cache, linea por linea,
+-google performance tools
+
+***Optimización***
+-La forma mas elemental de optimización es hacer que sea el compilador quien compile. Se usan las banderas - -O0, -O1, -O2, ... . Si son muy diferentes los resultados con las diferentes banderas, se debe revisar por que es probable que exista error.
+
+    - -O1 -g
+
+-usar librerias
+-Nuevo algoritmo
+-reescribir el programa de tal forma que sea mas amigable con la cache. Cache Friendly.
+-Paralelizar

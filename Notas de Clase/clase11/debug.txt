@@ -1,0 +1,11 @@
+*compilacion para hacer debug*
+
+g++ -Wall -g programname.cpp
+
+
+**
+-Wall: Muestra warnings al copilar el código
+-g: permite correr linea por linea para identificar errores
+-fsanitize=address | -fsanitize=undefinied | -fsanitize=leak: sanitizers, ayuda a encontrar errores
+
+**

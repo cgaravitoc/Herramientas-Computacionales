@@ -1,0 +1,9 @@
+*compilacion para hacer debug*
+
+g++ -Wall
+
+
+**
+Wall: Muestra warnings al compilar el código
+
+**
